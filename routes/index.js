@@ -2,6 +2,7 @@ const router = require('express').Router();
 const authRout = require('./auth');
 const userRout = require('./user');
 const movieRout = require('./movie');
+const auth = require('../middlewares/auth');
 // ошибки
 const NotFoundError = require('../errors/NotFoundError');
 // валидация
@@ -10,7 +11,7 @@ const NotFoundError = require('../errors/NotFoundError');
 router.use('/', authRout);
 
 // @ роут авторизация
-// router.use(auth);
+router.use(auth);
 
 // @ роут пользователя
 router.use('/users', userRout);
