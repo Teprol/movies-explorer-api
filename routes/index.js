@@ -10,13 +10,13 @@ const NotFoundError = require('../errors/NotFoundError');
 router.use('/', authRout);
 
 // @ роут авторизация
-router.use(auth);
+// router.use(auth);
 
 // @ роут пользователя
 router.use('/users', userRout);
 
 // @ роут фильмов
-router.use('/movies', movieRout);
+// router.use('/movies', movieRout);
 
 // @ страница не найдена
 router.use('/*', (req, res, next) => {

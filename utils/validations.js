@@ -55,4 +55,5 @@ module.exports = {
   validateCreateUser,
   validUserUpdate,
   validCreateMovie,
+  validDeleteMovie,
 };

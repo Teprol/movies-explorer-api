@@ -10,6 +10,8 @@ const { errors } = require('celebrate');
 const errHandller = require('./middlewares/errHandller');
 const router = require('./routes/index');
 
+// const { PORT = 3000, FILMS_DB = 'mongodb://127.0.0.1:27017/mestodb' } = process.env;
+
 // подключение бд монгуста
 mongoose.connect(FILMS_DB, {
   useNewUrlParser: true,
@@ -21,7 +23,7 @@ app.use(requestLogger); // подключаем логгер запросов
 app.use(limiter); // лимитер
 app.use(helmet());
 app.use(express.json());
-app.use(router); // роуты
+app.use('/', router); // роуты
 app.use(errorLogger); // подключаем логгер ошибок
 
 app.use(errors()); // ошибки валидации
