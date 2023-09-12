@@ -17,7 +17,7 @@ router.use(auth);
 router.use('/users', userRout);
 
 // @ роут фильмов
-// router.use('/movies', movieRout);
+router.use('/movies', movieRout);
 
 // @ страница не найдена
 router.use('/*', (req, res, next) => {
