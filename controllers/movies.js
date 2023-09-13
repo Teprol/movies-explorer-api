@@ -62,9 +62,8 @@ const deleteMovie = (req, res, next) => {
   movieModel.findById(req.params.movieId)
     .orFail()
     .then((movie) => {
-      // equals - сравнение
       if (!movie.owner.equals(req.user._id)) {
-        return next(new RightsError('Вы не можете удалять чужие карточки'));
+        next(new RightsError('Вы не можете удалять чужие карточки'));
       }
       movieModel
         .findByIdAndRemove(req.params.movieId)

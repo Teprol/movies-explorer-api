@@ -3,10 +3,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const helmet = require('helmet');
+const { errors } = require('celebrate');
 const limiter = require('./middlewares/limiter');
 const { FILMS_DB, PORT } = require('./utils/config');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
-const { errors } = require('celebrate');
 const errHandller = require('./middlewares/errHandller');
 const router = require('./routes/index');
 
