@@ -1,1 +1,17 @@
-# movies-explorer-api
+# Дипломный проект movies-explorer-api
+
+
+Адрес репозитория: https://github.com/Teprol/movies-explorer-api
+
+### Ссылки на проект:
+
+IP: 51.250.27.180
+
+Backend: https://api.bobrovdip.nomoredomainsicu.ru
+
+## Функционал
+
+ *Добавление фильма в сохраненные фильмы
+ *Удаление фильма из сохраненных фильмов
+ *Регистрация и авторизация пользователя
+ *Редактирование данных пользователя
