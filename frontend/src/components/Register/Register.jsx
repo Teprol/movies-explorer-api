@@ -44,7 +44,6 @@ function Register({ loggedIn, onRegist }) {
             onChange={handleChange}
             errors={errors.name}
             valids={valids.name}
-            pattern={paternName}
           ></Input>
           <Input
             className="input_label-top"

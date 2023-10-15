@@ -15,7 +15,13 @@ function SavedMovies({ loggedIn, saveMovie, deliteMovie }) {
   const [isSearchEmpty, setIsSearchEmpty] = React.useState(true);
 
   React.useEffect(() => {
-    setMovieFilter(saveMovie);
+    // если запрос есть рисуем по фильтру
+    if (searchData.searchString) {
+      filterMovie(searchData, saveMovie);
+    } else {
+      // если запроса нет, рисуем все сохр
+      setMovieFilter(saveMovie);
+    }
   }, [saveMovie]);
 
   // функция которая фильтрует массив всех фильмов
@@ -37,6 +43,7 @@ function SavedMovies({ loggedIn, saveMovie, deliteMovie }) {
 
   function searchMovies(objectSearch) {
     // todo начало загрузки
+    setSearchData(objectSearch);
     filterMovie(objectSearch, saveMovie);
     //todo конец загрузки
   }

@@ -5,7 +5,7 @@ import "./MoviesCardList.css";
 import MoviesCard from "../MoviesCard/MoviesCard";
 import Button from "../Button/Button";
 import Preloader from "../Preloader/Preloader"; //прелодер
-import { addScren, addMaxScren, initialFilmsMax, initialFilmsMedium, initialFilmsMini, DesktopScreen, TabletScreen } from "../../utils/constants.js"
+import { addScren, addMaxScren, initialFilmsMax, initialFilmsMedium, initialFilmsMini, DesktopScreen, TabletScreen, DesktopScreenPorogBot, DesktopScreenPorogTop } from "../../utils/constants.js"
 
 function MoviesCardList({ movieArr, error, isSearchEmpty, saveMovie, addMovie, deliteMovie, isLoading }) {
   const { pathname } = useLocation(); //отселдить урл
@@ -17,6 +17,10 @@ function MoviesCardList({ movieArr, error, isSearchEmpty, saveMovie, addMovie, d
   function renderListFilm() {
     const counter = { init: initialFilmsMax, step: addMaxScren }
     if (window.innerWidth < DesktopScreen && window.innerWidth >= TabletScreen) {
+      counter.init = initialFilmsMedium
+      counter.step = addScren
+    }
+    if (window.innerWidth > DesktopScreenPorogBot && window.innerWidth < DesktopScreenPorogTop) {
       counter.init = initialFilmsMedium
       counter.step = addScren
     }

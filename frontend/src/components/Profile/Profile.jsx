@@ -70,7 +70,6 @@ function Profile({
           onChange={handleChange}
           errors={errors.name}
           valids={valids.name}
-          pattern={paternName}
           value={values.name || ""}
         ></Input>
         <Input

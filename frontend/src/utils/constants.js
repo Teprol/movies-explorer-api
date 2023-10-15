@@ -1,5 +1,5 @@
-export const paternEmail = "[^@s]+@[^@s]+.[^@s]+";
-export const paternName = "^[А-Яа-яЁёs]+$";
+export const paternEmail = "^\\S+@\\S+\\.\\S+$";
+// export const paternName = "^[А-Яа-яЁёs]+$";
 
 export const addScren = 2;
 export const addMaxScren = 3;
