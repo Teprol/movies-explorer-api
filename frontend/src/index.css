@@ -1,0 +1,10 @@
+@import url("./vendor/normalize.css");
+
+/* @ переменные */
+@import url("./vendor/variables.css");
+
+/* @ шрифты */
+@import url("./vendor/fonts/fonts.css");
+
+/* @общие стили */
+@import url("./vendor/base.css");

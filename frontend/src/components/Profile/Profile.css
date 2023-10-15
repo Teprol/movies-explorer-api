@@ -1,0 +1,31 @@
+.profile {
+  display: flex;
+  row-gap: 123px;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 74px 70px 70px;
+}
+
+.profile__title {
+  margin: 0;
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media screen and (max-width: 1023px) {
+  .profile {
+    padding: 236px 179px 269px;
+    row-gap: 96px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    padding: 70px 30px 40px;
+    row-gap: 80px;
+  }
+}

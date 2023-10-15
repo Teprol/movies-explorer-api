@@ -1,0 +1,25 @@
+:root {
+  /* @ цвета фона */
+  --header-project-bg-color: #073042;
+  --bg-main: #202020;
+  --bg-user-icon-promo: #0f4157;
+  --bg-user-icon: #313131;
+  --bg-burger-menu: #202020;
+  --bg-section-techs: #272727;
+  --bg-techs-item: #303030;
+
+  /* @ цвета шрифтов */
+  --font-main-color: #fff;
+
+  /* @ подчеркивания под заголовками */
+  --border-title-color: #dadada;
+
+  /* @ padding */
+  --padding-desctop: 70px;
+  --padding-tab: 50px;
+  --padding-mobile: 18px;
+  --padding-mobile_2: 14px;
+
+}
+
+/* calc(15px + (18 - 15) * ((100vw - 768px) / (1280 - 768))) */
