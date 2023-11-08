@@ -1,0 +1,148 @@
+.about-project {
+  padding: 110px var(--padding-desctop);
+  box-sizing: border-box;
+}
+
+.about-project__stages {
+  margin-bottom: 110px;
+}
+
+.about-project__title {
+  margin: 0 0 70px;
+}
+
+.stages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px 40px;
+}
+
+.stages__item {
+  max-width: 550px;
+  min-width: 200px;
+  flex: 1;
+}
+
+.stages__title {
+  margin: 0 0 26px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+.stages__text {
+  margin: 0;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.chart {
+  display: flex;
+  text-align: center;
+}
+
+.chart__item {
+  flex: 1;
+}
+
+.chart__item_bekend {
+  max-width: calc(140px + (228 - 140) * ((100vw - 768px) / (1280 - 768)));
+}
+
+.chart__time {
+  padding: 9px 0 10px;
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  background-color: #303030;
+}
+
+.chart__time_bekend {
+  background-color: #3ddc84;
+  color: #000;
+}
+
+.chart__sage {
+  margin: 0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  color: #8b8b8b;
+}
+
+@media screen and (max-width: 1023px) {
+  .about-project {
+    padding: 90px var(--padding-tab);
+  }
+
+  .stages {
+    gap: 56px 30px;
+  }
+
+  .stages__title {
+    margin: 0 0 22px;
+  }
+
+  .stages__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .about-project__stages {
+    margin-bottom: 93px;
+  }
+
+  .chart__sage {
+    font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chart__item_bekend {
+    max-width: calc(100px + (140 - 100) * ((100vw - 320px) / (768 - 320)));
+  }
+
+  .about-project {
+    padding: 70px var(--padding-mobile);
+  }
+
+  .about-project__title {
+    margin: 0 0 60px;
+  }
+
+  .stages__title {
+    margin: 0 0 16px;
+    font-size: 18.5px;
+    letter-spacing: -1px;
+  }
+
+  .stages__text {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .about-project__stages {
+    margin-bottom: 60px;
+  }
+
+  .chart__time {
+    margin: 0 0 10px;
+    padding: 11px 0;
+    font-size: 11px;
+  }
+
+  .chart__sage {
+    font-size: 11px;
+    line-height: normal;
+  }
+}

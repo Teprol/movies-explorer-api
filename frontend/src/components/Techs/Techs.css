@@ -1,0 +1,118 @@
+.techs {
+  background-color: var(--bg-section-techs);
+  padding: 100px var(--padding-desctop) 100px;
+}
+
+.techs__title {
+  margin: 0 0 90px;
+}
+
+.techs__subtitle {
+  margin: 0 0 26px;
+  text-align: center;
+
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+}
+
+.techs__text {
+  margin: 0 auto 100px;
+  max-width: 460px;
+  text-align: center;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.56px;
+}
+
+.techs__techs-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90px);
+  justify-content: center;
+  gap: 10px;
+}
+
+.techs__item {
+  box-sizing: border-box;
+  padding: 21px 0;
+  background-color: var(--bg-techs-item);
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.56px;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 1023px) {
+  .techs {
+    padding: 90px var(--padding-tab);
+  }
+
+  .techs__title {
+    margin: 0 0 80px;
+  }
+
+  .techs__subtitle {
+    margin: 0 0 22px;
+  }
+
+  .techs__text {
+    margin: 0 auto 83px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.48px;
+  }
+
+  .techs__techs-list {
+    grid-template-columns: repeat(auto-fit, 84px);
+  }
+
+  .techs__item {
+    /* width: 84px; */
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .techs {
+    padding: 70px var(--padding-mobile);
+  }
+
+  .techs__title {
+    margin: 0 0 60px;
+  }
+
+  .techs__subtitle {
+    margin: 0 0 24px;
+
+    font-size: 30px;
+    line-height: normal;
+    letter-spacing: -1.2px;
+  }
+
+  .techs__text {
+    margin: 0 auto 50px;
+
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: -0.44px;
+  }
+
+  .techs__techs-list {
+    margin: 0 auto;
+    max-width: calc(178px + (648 - 178) * ((100vw - 320px) / (768 - 320)));
+  }
+}

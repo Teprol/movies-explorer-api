@@ -1,0 +1,117 @@
+.button-component {
+  box-sizing: border-box;
+  /* padding: 17px 20px; */
+  margin: 0;
+  border: none;
+
+  /* background-color: #4285f4; */
+  /* border-radius: 5px; */
+
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button_search {
+  line-height: 18px;
+
+  padding: 17px 0;
+  width: 100px;
+  background-color: #4285f4;
+  border-radius: 5px;
+}
+
+.button_card-save {
+  padding: 0;
+  width: 100px;
+  height: 29px;
+  border-radius: 30px;
+  background-image: url("../../images/icon-galka.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #ee3465;
+}
+
+.button_card-delete {
+  padding: 0;
+  width: 100px;
+  height: 29px;
+  border-radius: 30px;
+  background-image: url("../../images/icon-delete.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #313131;
+}
+
+.button_card {
+  padding: 9px 19px;
+  border-radius: 30px;
+  background-color: #313131;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+}
+
+.button_more {
+  padding: 11px 0 9px;
+  width: 100%;
+  border-radius: 6px;
+  background: #2f2f2f;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button_profile-edit {
+  background-color: transparent;
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button_submit {
+  padding: 13px 0 15px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background-color: #4285f4;
+  border-radius: 3px;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.button_disabled {
+  background-color: #f8f8f8;
+  color: #c2c2c2;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 767px) {
+  .button_search {
+    padding: 13px 0;
+    width: 80px;
+  }
+
+  .button_profile-edit {
+    font-size: 12px;
+  }
+
+  .button_submit {
+    padding: 15px 0;
+
+    font-size: 12px;
+  }
+}

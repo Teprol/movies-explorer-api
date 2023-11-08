@@ -1,0 +1,24 @@
+.button-profile {
+  display: flex;
+  align-items: center;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.button-profile__text {
+    margin: 0 13px 0 0;
+}
+
+.button-profile__user-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: var(--bg-user-icon);
+  background-image: url("../../images/icon__profile.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
